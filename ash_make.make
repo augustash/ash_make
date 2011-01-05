@@ -7,7 +7,6 @@ api = 2
 
 ; Contrib Modules
 projects[advanced_help][subdir] = "contrib"
-projects[better_formats][subdir] = "contrib"
 projects[boxes][subdir] = "contrib"
 projects[captcha][subdir] = "contrib"
 projects[colorbox][subdir] = "contrib"
@@ -22,9 +21,9 @@ projects[imce_wysiwyg][subdir] = "contrib"
 projects[jquery_plugin][subdir] = "contrib"
 projects[menu_block][subdir] = "contrib"
 projects[menu_position][subdir] = "contrib"
+projects[metatags][subdir] = "contrib"
 projects[node_import][subdir] = "contrib"
 projects[nodequeue][subdir] = "contrib"
-projects[nodewords][subdir] = "contrib"
 projects[page_title][subdir] = "contrib"
 projects[pathauto][subdir] = "contrib"
 projects[rules][subdir] = "contrib"
