@@ -1,21 +1,16 @@
-; Drupal core version, pressflow
-core = 6.x
-projects[pressflow][type] = "core"
-projects[pressflow][download][type] = "get"
-projects[pressflow][download][url] = "http://files.pressflow.org/pressflow-6-current.tar.gz"
+; Drupal core version
+core = 7.x
+projects[] = drupal
 
 ; drush make API version
 api = 2
 
 ; Contrib Modules
-projects[admin][subdir] = "contrib"
 projects[advanced_help][subdir] = "contrib"
 projects[better_formats][subdir] = "contrib"
 projects[boxes][subdir] = "contrib"
 projects[captcha][subdir] = "contrib"
-projects[cck][subdir] = "contrib"
 projects[colorbox][subdir] = "contrib"
-projects[colorbox][version] = "1.x-dev"
 projects[context][subdir] = "contrib"
 projects[ctools][subdir] = "contrib"
 projects[date][subdir] = "contrib"
@@ -23,11 +18,9 @@ projects[date][subdir] = "contrib"
 projects[date][version] = "2.x-dev"
 projects[devel][subdir] = "contrib"
 projects[features][subdir] = "contrib"
-projects[filefield][subdir] = "contrib"
 projects[google_analytics][subdir] = "contrib"
 projects[imageapi][subdir] = "contrib"
 projects[imagecache][subdir] = "contrib"
-projects[imagefield][subdir] = "contrib"
 projects[imce][subdir] = "contrib"
 projects[imce_wysiwyg][subdir] = "contrib"
 projects[jquery_plugin][subdir] = "contrib"
@@ -42,7 +35,6 @@ projects[nodewords][subdir] = "contrib"
 projects[page_title][subdir] = "contrib"
 projects[pathauto][subdir] = "contrib"
 projects[rules][subdir] = "contrib"
-projects[simpletest][subdir] = "contrib"
 projects[smtp][subdir] = "contrib"
 projects[strongarm][subdir] = "contrib"
 projects[token][subdir] = "contrib"
