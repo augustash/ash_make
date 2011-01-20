@@ -12,6 +12,8 @@ projects[admin][subdir] = "contrib"
 projects[advanced_help][subdir] = "contrib"
 projects[better_formats][subdir] = "contrib"
 projects[boxes][subdir] = "contrib"
+; Get the dev version of boxes (see http://drupal.org/node/887260)
+projects[boxes][version] = "1.x-dev"
 projects[captcha][subdir] = "contrib"
 projects[cck][subdir] = "contrib"
 projects[colorbox][subdir] = "contrib"
