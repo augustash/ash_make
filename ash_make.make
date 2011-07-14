@@ -8,6 +8,7 @@ api = 2
 ; Contrib Modules
 projects[advanced_help][subdir] = "contrib"
 projects[block_class][subdir] = "contrib"
+projects[block_class][version] = "1.x-dev"
 projects[boxes][subdir] = "contrib"
 projects[boxes][version] = "1.0-beta3"
 projects[captcha][subdir] = "contrib"
