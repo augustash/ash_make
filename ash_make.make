@@ -7,6 +7,7 @@ api = 2
 
 ; Contrib Modules
 projects[advanced_help][subdir] = "contrib"
+projects[block_class][subdir] = "contrib"
 projects[boxes][subdir] = "contrib"
 projects[boxes][version] = "1.0-beta3"
 projects[captcha][subdir] = "contrib"
@@ -29,6 +30,7 @@ projects[nodequeue][subdir] = "contrib"
 projects[nodequeue][version] = "2.0-alpha2"
 projects[page_title][subdir] = "contrib"
 projects[pathauto][subdir] = "contrib"
+projects[quicktabs][subdir] = "contrib"
 projects[rules][subdir] = "contrib"
 projects[smtp][subdir] = "contrib"
 projects[smtp][version] = "1.x-dev"
