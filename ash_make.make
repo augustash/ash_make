@@ -8,10 +8,9 @@ api = 2
 ; Contrib Modules
 projects[advanced_help][subdir] = "contrib"
 projects[block_class][subdir] = "contrib"
-projects[block_class][version] = "1.x-dev"
 projects[boxes][subdir] = "contrib"
 projects[captcha][subdir] = "contrib"
-projects[captcha][version] = "1.0-alpha3"
+projects[captcha][version] = "1.0-beta2"
 projects[colorbox][subdir] = "contrib"
 projects[context][subdir] = "contrib"
 projects[ctools][subdir] = "contrib"
@@ -39,7 +38,7 @@ projects[menu_block][subdir] = "contrib"
 projects[menu_position][subdir] = "contrib"
 projects[metatags_quick][subdir] = "contrib"
 projects[nodequeue][subdir] = "contrib"
-projects[nodequeue][version] = "2.0-alpha2"
+projects[nodequeue][version] = "2.0-beta1"
 projects[page_title][subdir] = "contrib"
 projects[pathauto][subdir] = "contrib"
 projects[quicktabs][subdir] = "contrib"
@@ -65,7 +64,7 @@ projects[framework][subdir] = "contrib"
 
 ; Libraries
 libraries[tinymce][download][type] = "get"
-libraries[tinymce][download][url] = "https://sourceforge.net/projects/tinymce/files/TinyMCE/3.3.9.2/tinymce_3_3_9_2.zip"
+libraries[tinymce][download][url] = "http://github.com/downloads/tinymce/tinymce/tinymce_3.4.7.zip"
 libraries[tinymce][directory_name] = "tinymce"
 libraries[tinymce][destination] = "libraries"
 
@@ -74,7 +73,7 @@ libraries[tinymce][destination] = "libraries"
 projects[ash_profile][type] = "profile"
 projects[ash_profile][download][type] = "git"
 projects[ash_profile][download][url] = "git://github.com/augustash/ash_profile.git"
-projects[ash_profile][download][tag] = "7.x-1.2"
+projects[ash_profile][download][tag] = "7.x-1.3"
 
 ; AAI Custom Modules
 ;projects[ash_blog][type] = "module"
