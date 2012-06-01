@@ -66,8 +66,6 @@ projects[wysiwyg_button_order][subdir] = "contrib"
 projects[xmlsitemap][subdir] = "contrib"
 
 ; Themes
-projects[tao][subdir] = "contrib"
-projects[rubik][subdir] = "contrib"
 projects[framework][subdir] = "contrib"
 
 ; Libraries
