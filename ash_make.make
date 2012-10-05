@@ -79,7 +79,7 @@ libraries[tinymce][destination] = "libraries"
 projects[ash_profile][type] = "profile"
 projects[ash_profile][download][type] = "git"
 projects[ash_profile][download][url] = "git://github.com/augustash/ash_profile.git"
-projects[ash_profile][download][tag] = "7.x-1.4"
+projects[ash_profile][download][tag] = "7.x-1.5"
 
 ; AAI Custom Modules
 ;projects[ash_blog][type] = "module"
