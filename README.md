@@ -4,7 +4,7 @@ This Document describes all the necessary steps to install Drupal using Ash_make
 ## Drush
 Drush is a command line shell and scripting interface for Drupal, a veritable Swiss Army knife designed to make life easier for those of us who spend some of our working hours hacking away at the command prompt.
 
-###Install/Update - Unix/OSX
+### Drush Install/Update - Unix/OSX
 
 The easiest way to install the latest release of Drush on Unix/Linux systems is via our custom PEAR channel:
     
@@ -42,7 +42,7 @@ Set up your environment as usual, using the client domain as folder name for you
     mkdir ~/projects/thecrazyhorse.com/ && cd ~/projects/thecrazyhorse.com
 
 ##### Clone Ash Make
-Navigate to the client domain in your projects folder and run the following command.
+Run the following command.
 
     $ git clone git://github.com/augustash/ash_make.git
 
@@ -58,15 +58,15 @@ You will be prompted with:
 
 Just confirm by typing `y` and press enter to continue. Watch for errors while drush download and create your project file/folders structure.
 
-###### Important: after run Drush remove the folder ash_make
+###### IMPORTANT: After run Drush remove the folder ash_make
 
     rm -rf ash_make
 
 ##### Creating Folders & Editing Files 
 
-Inside your projects folder,
+Inside the project folder,
 
-    ~/projects/sites
+    ~/projects/thecrazyhorse.com/sites
 
 Create the following folder structure:
 
@@ -165,13 +165,43 @@ function tch_html_head_alter(&$head_elements)
 }
 ```
 
+Copy and rename the file sites/example.sites.php to sites/sites.php
 
-## Todo
-### Finish documentation
+cp sites/example.sites.php sites/sites.php
+Edit file sites/site.php
 
-Access your local environment and select ash template and finish installation
+Add/Edit this to the end of this file
+You are going to add to the array your local url as key and client domain as value. The key/value you will be setting the staging environment, notice the convention: `aai[client_code].[server_name].aaidev.net` as key and client domain as value.
 
-Enable/add modules depending on the project needs.
+    $sites['thecrazyhorse.dev'] = 'thecrazyhorse.com';
+    $sites['aaitch.victor.aaidev.net'] = 'thecrazyhorse.com';
+
+
+##### Finishing Installation
+
+1 - Access your local environment, open your web browser and point it to thecrazyhorse.com, the Drupal installation start up screen will be shown. At this point `select August Ash profile and click save and continue.`
+
+2 - Next screen `click save and continue.`
+
+3 - Enter your local database information and click save and continue.
+
+4 - Installation Form
+ 
+- Site name field - enter the client company name
+- Site Email address field - enter changes@augustash.com
+- Username field - enter augustash
+- Emain Address field - enter changes@augustash.com
+- Password - you can use sequoia to create a password or you can use [Strong Password Generator](http://strongpasswordgenerator.com/) website to generate your password.
+
+IMPORTANT: before you enter the password in the Drupal installation form, create a record of it in [Sequoia](https://sequoia.augustash.com).
+
+
+
+5 - Un-check all fields under Update notifications and click save and continue.
+
+The installation should finish.
+
+6 - Access the administration area and Enable/add modules depending on the project needs.
 
 
 
