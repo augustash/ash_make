@@ -83,28 +83,28 @@ echo "Editing file sites/$CLIENT_DOMAIN/themes/custom/$CLIENT_CODE/$CLIENT_CODE.
 echo -ne "Changing theme name ... "
 ORG_TEXT="name = Framework"
 REPLACE_WITH="name = $CLIENT_CODE Theme"
-sed -ie 's/'"$ORG_TEXT"'/'"$REPLACE_WITH"'/' sites/$CLIENT_DOMAIN/themes/custom/$CLIENT_CODE/$CLIENT_CODE.info
+sed -i 's/'"$ORG_TEXT"'/'"$REPLACE_WITH"'/' sites/$CLIENT_DOMAIN/themes/custom/$CLIENT_CODE/$CLIENT_CODE.info
 echo "OK"
 
 # Replaces theme description
 echo -ne "Changing theme description ... "
 ORG_TEXT="Framework is a blank canvas for theme developers. Use Framework as a starting point to facilitate your theme development."
 REPLACE_WITH="Theme created by August Ash, Inc for $CLIENT_DOMAIN"
-sed -ie 's/'"$ORG_TEXT"'/'"$REPLACE_WITH"'/' sites/$CLIENT_DOMAIN/themes/custom/$CLIENT_CODE/$CLIENT_CODE.info
+sed -i 's/'"$ORG_TEXT"'/'"$REPLACE_WITH"'/' sites/$CLIENT_DOMAIN/themes/custom/$CLIENT_CODE/$CLIENT_CODE.info
 echo "OK"
 
 # Replaces information string
 echo -ne "Adding script information ... "
 ORG_TEXT="; Information added by drupal.org packaging script on.*"
 REPLACE_WITH="; Information added by August Ash, Inc packaging script on "`date +%Y-%m-%d`
-sed -ie 's/'"$ORG_TEXT"'/'"$REPLACE_WITH"'/' sites/$CLIENT_DOMAIN/themes/custom/$CLIENT_CODE/$CLIENT_CODE.info
+sed -i 's/'"$ORG_TEXT"'/'"$REPLACE_WITH"'/' sites/$CLIENT_DOMAIN/themes/custom/$CLIENT_CODE/$CLIENT_CODE.info
 echo "OK"
 
 # Replaces theme project
 echo -ne "Changing theme project name ... "
 ORG_TEXT="framework"
 REPLACE_WITH="$CLIENT_CODE"
-sed -ie 's/'"$ORG_TEXT"'/'"$REPLACE_WITH"'/' sites/$CLIENT_DOMAIN/themes/custom/$CLIENT_CODE/$CLIENT_CODE.info
+sed -i 's/'"$ORG_TEXT"'/'"$REPLACE_WITH"'/' sites/$CLIENT_DOMAIN/themes/custom/$CLIENT_CODE/$CLIENT_CODE.info
 echo "OK"
 
 # updates theme datestamp
@@ -123,7 +123,7 @@ echo "#####################################"
 echo "# Editing File template.php "
 echo "#####################################"
 echo -ne "Editing file sites/$CLIENT_DOMAIN/themes/custom/$CLIENT_CODE/template.php ... "
-sed -ie 's/framework_/'"$CLIENT_CODE"_'/' sites/$CLIENT_DOMAIN/themes/custom/$CLIENT_CODE/template.php
+sed -i 's/framework_/'"$CLIENT_CODE"_'/' sites/$CLIENT_DOMAIN/themes/custom/$CLIENT_CODE/template.php
 echo "OK"
 
 echo "#####################################"
