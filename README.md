@@ -46,6 +46,25 @@ Run the following command.
 
     $ git clone git://github.com/augustash/ash_make.git
 
+### Automated Process
+
+Move the file build.sh outside ash_make folder.
+
+    mv ash_make/build.sh build.sh
+
+run the bash script with client domain and client code:
+
+    ./build.sh thecrazyhorse.com tch
+    
+After the script finish please remember to remove the file build.sh before you push 
+your code
+    
+    rm -rf build.sh
+    
+Also check the file sites/sites.php and update the local environment if needed.
+    
+
+### Manual Process
 
 ##### Rinning Ash Make
 With drush fully functional in your local machine navigate to the project folder and run the following command:
@@ -122,8 +141,8 @@ Edit the file tch.info and change the theme name, remove timestamps, edit versio
 
 After finished your file should look like this:
 
-    `name = The Crazy Horse Theme`
-    `description = Custom theme created by August Ash, Inc. for thecrazyhorse.com`
+    name = The Crazy Horse Theme
+    description = Custom theme created by August Ash, Inc. for thecrazyhorse.com
     core = 7.x
     engine = phptemplate
     stylesheets[all][] = style.css
@@ -137,9 +156,9 @@ After finished your file should look like this:
     regions[sidebar_second] = Second Sidebar
     regions[footer]         = Footer
 
-    `version = "7.x-0.1"`
+    version = "7.x-0.1"
     core = "7.x"
-    `project = "tch"`
+    project = "tch"
 
 Edit template.php and rename all methods that start with framework_ to the client code.
 
