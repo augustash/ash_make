@@ -55,51 +55,51 @@ function run_edits () {
         echo -ne "Changing theme name ... "
         ORG_TEXT="name = Framework"
         REPLACE_WITH="name = $CLIENT_CODE Theme"
-        sed -i 's/'"$ORG_TEXT"'/'"$REPLACE_WITH"'/' sites/$CLIENT_DOMAIN/themes/custom/$CLIENT_CODE/$CLIENT_CODE.info
+        sed -i '' -e 's/'"$ORG_TEXT"'/'"$REPLACE_WITH"'/' sites/$CLIENT_DOMAIN/themes/custom/$CLIENT_CODE/$CLIENT_CODE.info
         echo "OK"
 
         # Replaces theme description
         echo -ne "Changing theme description ... "
         ORG_TEXT="Framework is a blank canvas for theme developers. Use Framework as a starting point to facilitate your theme development."
         REPLACE_WITH="Theme created by August Ash, Inc for $CLIENT_DOMAIN"
-        sed -i 's/'"$ORG_TEXT"'/'"$REPLACE_WITH"'/' sites/$CLIENT_DOMAIN/themes/custom/$CLIENT_CODE/$CLIENT_CODE.info
+        sed -i '' -e 's/'"$ORG_TEXT"'/'"$REPLACE_WITH"'/' sites/$CLIENT_DOMAIN/themes/custom/$CLIENT_CODE/$CLIENT_CODE.info
         echo "OK"
 
         # Replaces information string
         echo -ne "Adding script information ... "
         ORG_TEXT="; Information added by drupal.org packaging script on.*"
         REPLACE_WITH="; Information added by August Ash, Inc packaging script on "`date +%Y-%m-%d`
-        sed -i 's/'"$ORG_TEXT"'/'"$REPLACE_WITH"'/' sites/$CLIENT_DOMAIN/themes/custom/$CLIENT_CODE/$CLIENT_CODE.info
+        sed -i '' -e 's/'"$ORG_TEXT"'/'"$REPLACE_WITH"'/' sites/$CLIENT_DOMAIN/themes/custom/$CLIENT_CODE/$CLIENT_CODE.info
         echo "OK"
 
         # Replaces theme project
         echo -ne "Changing theme project name ... "
         ORG_TEXT="framework"
         REPLACE_WITH="$CLIENT_CODE"
-        sed -i 's/'"$ORG_TEXT"'/'"$REPLACE_WITH"'/' sites/$CLIENT_DOMAIN/themes/custom/$CLIENT_CODE/$CLIENT_CODE.info
+        sed -i '' -e 's/'"$ORG_TEXT"'/'"$REPLACE_WITH"'/' sites/$CLIENT_DOMAIN/themes/custom/$CLIENT_CODE/$CLIENT_CODE.info
         echo "OK"
 
         # updates theme datestamp
         echo -ne "Updating datetimestamp ... "
         REPLACE_WITH=`date +%s`
-        sed -i "s/datestamp = .*/datestamp = \"${REPLACE_WITH}\"/" sites/$CLIENT_DOMAIN/themes/custom/$CLIENT_CODE/$CLIENT_CODE.info
+        sed -i '' -e "s/datestamp = .*/datestamp = \"${REPLACE_WITH}\"/" sites/$CLIENT_DOMAIN/themes/custom/$CLIENT_CODE/$CLIENT_CODE.info
         echo "OK"
 
         # updates theme version
         REPLACE_WITH=`date +%s`
         VERSION="7.x-0.1"
-        sed -i "s/version = .*/version = \"${VERSION}\"/" sites/$CLIENT_DOMAIN/themes/custom/$CLIENT_CODE/$CLIENT_CODE.info
+        sed -i '' -e "s/version = .*/version = \"${VERSION}\"/" sites/$CLIENT_DOMAIN/themes/custom/$CLIENT_CODE/$CLIENT_CODE.info
 
 
         echo "Editing File template.php "
         echo -ne "Editing file sites/$CLIENT_DOMAIN/themes/custom/$CLIENT_CODE/template.php ... "
-        sed -i 's/framework_/'"$CLIENT_CODE"_'/' sites/$CLIENT_DOMAIN/themes/custom/$CLIENT_CODE/template.php
+        sed -i '' -e 's/framework_/'"$CLIENT_CODE"_'/' sites/$CLIENT_DOMAIN/themes/custom/$CLIENT_CODE/template.php
         echo "OK"
 
        echo -ne "Editing file sites/sites.php ... "
        echo '$sites["'aai$CLIENT_CODE.victor.aaidev.net'"] = "'$CLIENT_DOMAIN'";' >> sites/sites.php
 
-        echo -e "\n"
+       echo -e "\n"
 
     done
 
