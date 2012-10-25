@@ -114,11 +114,14 @@ function create_database () {
     echo '#                              Creating Database                                   #'
     echo '####################################################################################'
 
+    # TODO - Find a better way to
+    # autodetect shell since which
+    # does not work for mac
     MYSQL=`which mysql`
-    
     if [ $SHELL != "/bin/bash" ]; then
-        MYSQL=`whence -p mysql`
-        say "z-shell is bad, bad, bad. Please use bash. Bash is awesome!"
+        MYSQL=`mysql`
+        #MYSQL=`whence -p mysql`
+        #say "z-shell is bad, bad, bad. Please use bash. Bash is awesome!"
     fi
     
     tick="'"
