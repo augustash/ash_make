@@ -248,7 +248,7 @@ has_database=n
 read -p "Automatically try to create a database for this Drupal installation? [N]: " input_database
 has_database=${input_database:-has_database}
 
-db_host='127.0.0.1'
+db_host='192.168.16.116'
 db_name=$main_code"_drupal_dev"
 db_username='developer'
 db_password=''
