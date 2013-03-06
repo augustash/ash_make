@@ -70,10 +70,9 @@ projects[framework][subdir] = "contrib"
 
 ; Libraries
 libraries[tinymce][download][type] = "get"
-libraries[tinymce][download][url] = "http://github.com/downloads/tinymce/tinymce/tinymce_3.4.7.zip"
+libraries[tinymce][download][url] = "http://github.com/downloads/tinymce/tinymce/tinymce_3.5.8.zip"
 libraries[tinymce][directory_name] = "tinymce"
 libraries[tinymce][destination] = "libraries"
-
 
 ; Install Profiles
 projects[ash_profile][type] = "profile"
