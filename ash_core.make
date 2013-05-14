@@ -603,10 +603,11 @@ projects[wraith][download][url]               = "git@github.com:JaceRider/Wraith
 ; Install Profiles
 ; ------------------------------------------------------------------------------
 
-;projects[ash_profile][type]                  = "profile"
-;projects[ash_profile][download][type]        = "git"
-;projects[ash_profile][download][url]         = "git://github.com/augustash/ash_profile.git"
-;projects[ash_profile][download][tag]         = "7.x-1.5"
+projects[ash_profile][type]                   = "profile"
+projects[ash_profile][download][type]         = "git"
+projects[ash_profile][download][url]          = "git://github.com/grafikchaos/ash_profile.git"
+projects[ash_profile][download][branch]       = "new_core_profile"
+;projects[ash_profile][download][tag]         = "7.x-1.6"
 
 ; ------------------------------------------------------------------------------
 ; AAI Custom Modules
