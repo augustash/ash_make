@@ -179,7 +179,12 @@ projects[smtp][version]                       = "1.0"
 ;
 ; @see http://drupal.org/project/postmark
 projects[postmark][subdir]                    = "contrib"
-projects[postmark][version]                   = "1.x-dev"
+projects[postmark][version]                   = "1.2"
+libraries[postmark][type]                     = "libraries"
+libraries[postmark][download][type]           = "git"
+libraries[postmark][download][url]            = "git@github.com:Znarkus/postmark-php.git"
+libraries[postmark][download][revision]       = "4c5b7d6487e32b76a19120bb181"
+libraries[postmark][directory_name]           = "postmark-php"
 
 ; Mail System
 ;
