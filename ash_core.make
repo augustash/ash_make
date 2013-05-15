@@ -478,10 +478,10 @@ projects[textformatter][version]              = "1.3"
 ;
 ; Markdown epic editor for Drupal
 ; @see https://github.com/JaceRider/mee
-projects[mee][subdir] 												= "contrib"
-projects[mee][type] 													= "module"
-projects[mee][download][type] 								= "git"
-projects[mee][download][url] 									= "git@github.com:JaceRider/mee.git"
+projects[mee][subdir]                         = "contrib"
+projects[mee][type]                           = "module"
+projects[mee][download][type]                 = "git"
+projects[mee][download][url]                  = "git@github.com:JaceRider/mee.git"
 
 
 ; IMCE
