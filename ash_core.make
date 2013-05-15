@@ -25,7 +25,7 @@ projects[drupal][version]                     = "7.22"
 ; will be able to manage far more than just Panels.
 ; @see http://drupal.org/project/ctools
 projects[ctools][subdir]                      = "contrib"
-projects[ctools][version]                     = "1.2"
+projects[ctools][version]                     = "1.3"
 
 ; Libraries
 ;
@@ -332,7 +332,7 @@ projects[draggableviews][version]             = "2.x-dev"
 ; CRUD controller, which helps simplifying the creation of new entity types.
 ; @see http://drupal.org/project/entity
 projects[entity][subdir]                      = "contrib"
-projects[entity][version]                     = "1.0"
+projects[entity][version]                     = "1.1"
 
 ; Auto Entity Label
 ;
@@ -381,7 +381,7 @@ projects[maxlength][version]                  = "3.0-beta1"
 ; present in the field widget form and which ones should be rendered for display
 ; @see http://drupal.org/project/addressfield
 projects[addressfield][subdir]                = "contrib"
-projects[addressfield][version]               = "1.0-beta3"
+projects[addressfield][version]               = "1.0-beta4"
 
 ; Date
 ;
