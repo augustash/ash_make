@@ -272,13 +272,13 @@ projects[boxes][version]                      = "1.1"
 ; @see http://drupal.org/project/colorbox
 ; @see http://www.jacklmoore.com/colorbox/
 projects[colorbox][subdir]                    = "contrib"
-projects[jquery_update][version]              = "2.4"
 
 ; Jquery Update
 ;
 ; Upgrades the version of jQuery in Drupal core to a newer version of jQuery.
 ; @see http://drupal.org/project/jquery_update
-; projects[jquery_update][subdir]             = "contrib"
+projects[jquery_update][subdir]               = "contrib"
+projects[jquery_update][version]              = "2.3"
 
 ; jQuery Plugin
 ;
