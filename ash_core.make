@@ -73,6 +73,15 @@ projects[context][version]                    = "3.0-beta6"
 projects[features][subdir]                    = "contrib"
 projects[features][version]                   = "2.0-beta2"
 
+; Strongarm
+;
+; gives site builders a way to override the default variable values that Drupal
+; core and contributed modules ship with. It is not an end user tool, but a
+; developer and site builder tool which provides an API and a limited UI
+; @see http://drupal.org/project/strongarm
+projects[strongarm][subdir]                   = "contrib"
+projects[strongarm][version]                  = "2.0"
+
 ; Node Queue
 ;
 ; allows users to collect nodes in an arbitrarily ordered list.
@@ -146,6 +155,11 @@ projects[redirect][version]                   = "1.0-rc1"
 projects[references][subdir]                  = "contrib"
 projects[references][version]                 = "2.1"
 
+
+; ----------------------
+; Emails
+; ----------------------
+
 ; SMTP
 ;
 ; allows Drupal to bypass the PHP mail() function and send email directly to an
@@ -155,14 +169,25 @@ projects[references][version]                 = "2.1"
 projects[smtp][subdir]                        = "contrib"
 projects[smtp][version]                       = "1.0"
 
-; Strongarm
+; Postmark
 ;
-; gives site builders a way to override the default variable values that Drupal
-; core and contributed modules ship with. It is not an end user tool, but a
-; developer and site builder tool which provides an API and a limited UI
-; @see http://drupal.org/project/strongarm
-projects[strongarm][subdir]                   = "contrib"
-projects[strongarm][version]                  = "2.0"
+; allows the administrator to switch the standard SMTP library over to use the
+; third party Postmark API to send out TRANSACTIONAL emails from their site. An
+; account with Postmark is required to use this module.
+;
+; Depends on Mail System
+;
+; @see http://drupal.org/project/postmark
+projects[postmark][subdir]                    = "contrib"
+projects[postmark][version]                   = "1.x-dev"
+
+; Mail System
+;
+; Provides an Administrative UI and Developers API for safely updating the
+; mail_system configuration variable.
+; @see http://drupal.org/project/mailsystem
+projects[mailsystem][subdir]                  = "contrib"
+projects[mailsystem][version]                 = "2.34"
 
 
 ; ----------------------
