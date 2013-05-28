@@ -365,6 +365,32 @@ projects[file_entity][subdir]                 = "contrib"
 projects[file_entity][version]                = "2.0-unstable7"
 
 
+; Entity Reference
+;
+; Provides a field type that can reference arbitrary entities:
+; - A generic entity reference field
+; - Four widgets:
+; 	- Two implemented on top of the Options module (Select and
+;			Radios/Checkboxes),
+; 	- Two autocomplete widgets (one with one text field per entry, one tag-style
+;	 		with comma-separated entries in the same text field)
+; - Two formatters:
+; 	- A "Label" formatter, with optional link that displays the label of the
+; 		referenced entity (the node title, the user name, etc.)
+; 	- A "Rendered entity" formatter, that renders the references entity using a
+; 		configurable view mode
+; - Integration with Views (for both forward and backward references)
+; - Integration with Entity Metadata (and as a consequence with Search API and
+; 	the like)
+; - Integration with Devel generate
+; - Integration with Feeds and Migrate (>= 2.3) for painless data import
+;
+; This modules depends on Entity API and CTools.
+;
+; @see http://drupal.org/project/entityreference
+projects[entityreference][subdir] 						= "contrib"
+projects[entityreference][version] 						= "1.0"
+
 ; ------------------------------------------------------------------------------
 ; Fields or field- or form-related modules
 ; ------------------------------------------------------------------------------
