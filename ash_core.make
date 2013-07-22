@@ -511,6 +511,7 @@ projects[mee][subdir]                         = "contrib"
 projects[mee][type]                           = "module"
 projects[mee][download][type]                 = "git"
 projects[mee][download][url]                  = "git@github.com:JaceRider/mee.git"
+projects[mee][download][branch]               = "1.0"
 
 
 ; IMCE
@@ -661,6 +662,7 @@ projects[xmlsitemap][subdir]                  = "contrib"
 projects[wraith][type]                        = "theme"
 projects[wraith][download][type]              = "git"
 projects[wraith][download][url]               = "git@github.com:JaceRider/Wraith.git"
+projects[wraith][download][branch]            = "1.0"
 
 
 ; ------------------------------------------------------------------------------
